@@ -1,4 +1,5 @@
 //  Peter Smith
+//  February 26, 2016
 //  ViewController.swift
 //  Midterm
 //
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperFour: UIStepper!
     @IBOutlet weak var stepperFive: UIStepper!
     
+    //changes labels when stepper changed
     @IBAction func stepperValueChanged(sender: AnyObject) {
         itemNumberOne.text = Int(stepperOne.value).description
         itemNumbertwo.text = Int(stepperTwo.value).description
@@ -41,6 +43,7 @@ class ViewController: UIViewController {
         itemNumberFive.text = Int(stepperFive.value).description
     }
     
+    //default stepper values to min zero
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,6 +54,7 @@ class ViewController: UIViewController {
         stepperFive.minimumValue = 0
     }
     
+    //resets the app when clicked
     @IBAction func resetApp(sender: AnyObject) {
         stepperOne.value = 0
         stepperTwo.value = 0

@@ -97,7 +97,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" label="saveButton"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="inZ-Xa-XBP" secondAttribute="height" multiplier="2:1" id="vfg-qc-5Zi"/>
+                                    <constraint firstAttribute="width" secondItem="inZ-Xa-XBP" secondAttribute="height" multiplier="2:1" id="aEK-TZ-O7X"/>
                                 </constraints>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -277,20 +277,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O9-Af-tD9">
-                                <rect key="frame" x="286" y="506" width="100" height="50"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration" label="cancelButton"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2O9-Af-tD9" secondAttribute="height" multiplier="2:1" id="ggI-rg-t0Z"/>
-                                </constraints>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="resetApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prd-yh-P0F"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-Hm-bw6">
                                 <rect key="frame" x="27" y="102" width="267" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="shoppingListName"/>
@@ -300,6 +286,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O9-Af-tD9">
+                                <rect key="frame" x="286" y="506" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="cancelButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2O9-Af-tD9" secondAttribute="height" multiplier="2:1" id="7OB-zl-3nt"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prd-yh-P0F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.98051919772707186" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -310,7 +310,7 @@
                             <constraint firstItem="tDT-6P-MQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3k8-h4-FoX"/>
                             <constraint firstItem="32T-Dc-sQh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4Ls-6X-P6L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MCF-al-d17" secondAttribute="trailing" constant="11" id="4qb-54-WF0"/>
-                            <constraint firstItem="2O9-Af-tD9" firstAttribute="top" secondItem="32T-Dc-sQh" secondAttribute="bottom" constant="115" id="51s-dx-X7t"/>
+                            <constraint firstItem="inZ-Xa-XBP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="6Tb-90-Yy2"/>
                             <constraint firstItem="Fqc-qJ-K27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7OP-Gv-4fg"/>
                             <constraint firstItem="sNf-qu-TwW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9MK-aY-fZi"/>
                             <constraint firstItem="MuO-qG-ZtD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="A5S-2k-qaa"/>
@@ -328,7 +328,6 @@
                             <constraint firstItem="Xc1-F6-LAi" firstAttribute="leading" secondItem="Tjx-tw-J9G" secondAttribute="trailing" constant="18" id="Pwx-iL-GOY"/>
                             <constraint firstItem="tDT-6P-MQR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QfT-Uy-ZwF"/>
                             <constraint firstItem="KxX-GN-RpP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R5n-0V-sFd"/>
-                            <constraint firstItem="inZ-Xa-XBP" firstAttribute="top" secondItem="bky-be-Ah4" secondAttribute="bottom" constant="77" id="THJ-qB-Wzc"/>
                             <constraint firstItem="tDT-6P-MQR" firstAttribute="top" secondItem="6Jl-P0-xye" secondAttribute="bottom" constant="8" id="Tja-OB-1qE"/>
                             <constraint firstItem="UYi-oo-eYg" firstAttribute="top" secondItem="pIs-n6-Qxv" secondAttribute="bottom" constant="8" id="Trl-L3-mcp"/>
                             <constraint firstItem="OIO-6u-JrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGZ-ZT-6Rp"/>
@@ -337,7 +336,6 @@
                             <constraint firstItem="2SW-zQ-Bhi" firstAttribute="top" secondItem="Fqc-qJ-K27" secondAttribute="bottom" constant="8" id="VYu-Xj-fCa"/>
                             <constraint firstItem="Xc1-F6-LAi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Vhw-I1-aQ4"/>
                             <constraint firstItem="KxX-GN-RpP" firstAttribute="top" secondItem="2SW-zQ-Bhi" secondAttribute="bottom" constant="8" id="W9g-gJ-aUS"/>
-                            <constraint firstItem="2O9-Af-tD9" firstAttribute="leading" secondItem="inZ-Xa-XBP" secondAttribute="trailing" constant="106" id="YDC-Mh-J7z"/>
                             <constraint firstItem="wGg-zX-wec" firstAttribute="top" secondItem="32T-Dc-sQh" secondAttribute="bottom" constant="12" id="Yzo-ZY-ahA"/>
                             <constraint firstItem="bUL-Yj-TCz" firstAttribute="top" secondItem="UYi-oo-eYg" secondAttribute="bottom" constant="8" id="aSB-Un-ccb"/>
                             <constraint firstItem="tDT-6P-MQR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aqV-yK-ROZ"/>
@@ -354,6 +352,7 @@
                             <constraint firstItem="6gx-fq-3fm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fjF-31-gdW"/>
                             <constraint firstItem="32T-Dc-sQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbu-Qt-0kw"/>
                             <constraint firstItem="pIs-n6-Qxv" firstAttribute="leading" secondItem="Xh8-gH-EvY" secondAttribute="trailing" constant="18" id="gzs-LD-Db1"/>
+                            <constraint firstItem="inZ-Xa-XBP" firstAttribute="top" secondItem="bky-be-Ah4" secondAttribute="bottom" constant="77" id="hmG-8u-2ZD"/>
                             <constraint firstItem="jsW-yv-KGo" firstAttribute="top" secondItem="OIO-6u-JrS" secondAttribute="bottom" constant="13" id="i3f-Zt-otO"/>
                             <constraint firstItem="Fqc-qJ-K27" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i8W-2X-PUx"/>
                             <constraint firstItem="wpf-Hm-bw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="iDU-2f-3Ui"/>
@@ -372,10 +371,11 @@
                             <constraint firstItem="32T-Dc-sQh" firstAttribute="top" secondItem="sVS-qE-UAb" secondAttribute="bottom" constant="8" id="uFN-ZH-w6F"/>
                             <constraint firstItem="Xc1-F6-LAi" firstAttribute="top" secondItem="Fqc-qJ-K27" secondAttribute="bottom" constant="8" id="vV4-Fj-FSf"/>
                             <constraint firstItem="pIs-n6-Qxv" firstAttribute="top" secondItem="KxX-GN-RpP" secondAttribute="bottom" constant="9" id="wdm-aX-CA5"/>
+                            <constraint firstItem="2O9-Af-tD9" firstAttribute="top" secondItem="32T-Dc-sQh" secondAttribute="bottom" constant="115" id="wrW-BQ-nlz"/>
                             <constraint firstItem="UYi-oo-eYg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xkq-TN-A7w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9gG-tP-CxN" secondAttribute="trailing" constant="-20" id="xlf-x4-0XL"/>
-                            <constraint firstItem="inZ-Xa-XBP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="xoW-0n-8Mu"/>
                             <constraint firstItem="QUZ-Qz-y0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="xyx-1R-wiO"/>
+                            <constraint firstItem="2O9-Af-tD9" firstAttribute="leading" secondItem="inZ-Xa-XBP" secondAttribute="trailing" constant="106" id="y50-S8-hjj"/>
                             <constraint firstItem="6gx-fq-3fm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yD6-qA-ypd"/>
                         </constraints>
                     </view>
