@@ -47,15 +47,6 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-Hm-bw6">
-                                <rect key="frame" x="27" y="102" width="267" height="30"/>
-                                <accessibility key="accessibilityConfiguration" label="shoppingListName"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wpf-Hm-bw6" secondAttribute="height" multiplier="89:10" id="krz-aE-rrY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2SW-zQ-Bhi">
                                 <rect key="frame" x="27" y="195" width="153" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="firstLineTextfield"/>
@@ -126,6 +117,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xc1-F6-LAi" secondAttribute="height" multiplier="94:29" id="FQD-zt-7nQ"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fPi-Jf-PDh"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjx-tw-J9G">
                                 <rect key="frame" x="426" y="199" width="42" height="21"/>
@@ -172,24 +166,36 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pIs-n6-Qxv" secondAttribute="height" multiplier="94:29" id="Wli-bE-Pib"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4yZ-tr-01E"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MuO-qG-ZtD">
                                 <rect key="frame" x="486" y="298" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MuO-qG-ZtD" secondAttribute="height" multiplier="94:29" id="87J-3x-fGT"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="w7O-4w-jkY"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sVS-qE-UAb">
                                 <rect key="frame" x="486" y="349" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sVS-qE-UAb" secondAttribute="height" multiplier="94:29" id="xv6-aE-tTt"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kuD-KE-WPD"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sNf-qu-TwW">
                                 <rect key="frame" x="486" y="399" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sNf-qu-TwW" secondAttribute="height" multiplier="94:29" id="Icy-iz-NK5"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Acl-7C-Aoj"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-6P-MQR">
                                 <rect key="frame" x="20" y="89" width="560" height="5"/>
@@ -281,7 +287,19 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prd-yh-P0F"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-Hm-bw6">
+                                <rect key="frame" x="27" y="102" width="267" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="shoppingListName"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wpf-Hm-bw6" secondAttribute="height" multiplier="89:10" id="krz-aE-rrY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.98051919772707186" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -361,6 +379,24 @@
                             <constraint firstItem="6gx-fq-3fm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yD6-qA-ypd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="itemFive" destination="bky-be-Ah4" id="pwK-9Y-ied"/>
+                        <outlet property="itemFour" destination="QUZ-Qz-y0j" id="qyf-Ib-UR2"/>
+                        <outlet property="itemNumberFive" destination="wGg-zX-wec" id="yji-bL-NpC"/>
+                        <outlet property="itemNumberFour" destination="jsW-yv-KGo" id="uLC-fJ-Iun"/>
+                        <outlet property="itemNumberOne" destination="Tjx-tw-J9G" id="kO7-OG-ZbO"/>
+                        <outlet property="itemNumberThree" destination="U4u-vh-xyf" id="Muk-Ep-B5J"/>
+                        <outlet property="itemNumbertwo" destination="Xh8-gH-EvY" id="iWj-6n-bAg"/>
+                        <outlet property="itemOne" destination="2SW-zQ-Bhi" id="GS6-2x-95G"/>
+                        <outlet property="itemThree" destination="bUL-Yj-TCz" id="0k5-hF-phX"/>
+                        <outlet property="itemTwo" destination="o39-bh-xFq" id="iwh-Gh-pvr"/>
+                        <outlet property="listName" destination="wpf-Hm-bw6" id="xlg-W5-Ogt"/>
+                        <outlet property="stepperFive" destination="sNf-qu-TwW" id="Xbx-MD-exq"/>
+                        <outlet property="stepperFour" destination="sVS-qE-UAb" id="kce-KS-W0h"/>
+                        <outlet property="stepperOne" destination="Xc1-F6-LAi" id="Lko-dg-Jps"/>
+                        <outlet property="stepperThree" destination="MuO-qG-ZtD" id="nKC-LH-RgA"/>
+                        <outlet property="stepperTwo" destination="pIs-n6-Qxv" id="111-pn-4Z6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
